@@ -1,0 +1,15 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("A")
+    keyboard.sendString("A")
+    basic.pause(500)
+    keyboard.sendString(keyboard.keys(keyboard._Key.enter))
+    basic.pause(500)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("B")
+    keyboard.sendString("B")
+    basic.pause(500)
+    keyboard.sendString(keyboard.keys(keyboard._Key.enter))
+    basic.pause(500)
+})
+keyboard.startKeyboardService()
